@@ -62,7 +62,7 @@ public class FlightManager
      * This private helper method generates and returns a flight number string from the airline name parameter
      * For example, if parameter string airline is "Air Canada" the flight number should be "ACxxx" where xxx is
      * a random 3 digit number between 101 and 300 (Hint: use class Random - see variable random at top of class)
-     * you can assume every airline name is always 2 words.
+     * Every airline name is always 2 words in this project.
      *
      */
     private String generateFlightNumber(String airline)
@@ -120,9 +120,8 @@ public class FlightManager
 
     // Given a flight number string flightNum and a seat type, reserve a seat on a flight
     // If successful, return a Reservation object
-    // NOTE: seat types are not used for basic Flight objects (seats are all "Economy Seats")
+    // Seat types are not used for basic Flight objects (seats are all "Economy Seats")
     // class LongHaulFlight defines two seat types
-    // I  suggest you first write this method *without* considering class LongHaulFlight
     // once that works (test it!!), add the long haul flight code
     public Reservation reserveSeatOnFlight(String flightNum,Passenger aPassenger) throws FlightHasNoFirstClassSeatsException, FlightNotFoundException,SeatOccupiedException,SeatDoesNotExistException,PassengerAlreadyOnFlightException {
         /**
@@ -203,20 +202,9 @@ public class FlightManager
 
 
     }
-    // Sort the array list of flights by increasing departure time
-    // Essentially one line of code but you will be making use of a Comparator object below
-
-
-
-    //Sort the array list of flights by increasing flight duration
-    // Essentially one line of code but you will be making use of a Comparator object below
 
     // Prints all aircraft in airplanes array list.
-    // See class Aircraft for a print() method
 
-
-    // Sort the array list of Aircraft objects
-    // This is one line of code. Make sure class Aircraft implements the Comparable interface
     public void sortAircraft()
     {
         Collections.sort(airplanes);
