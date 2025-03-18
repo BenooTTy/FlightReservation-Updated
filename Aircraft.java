@@ -61,9 +61,6 @@ public class Aircraft implements Comparable<Aircraft> // implements the comparab
 	}
 	// prints some information about the aircraft
 
-	/*
-	 * Write a compareTo method that is part of the Comparable interface
-	 */
 	public int compareTo(Aircraft otherAircraft) {// compares an aircraft to another aircraft by the number of seats
 		if (this.getNumSeats() == otherAircraft.getNumSeats()) {// if their regular seats are equal, compare their first
 																// class seats
