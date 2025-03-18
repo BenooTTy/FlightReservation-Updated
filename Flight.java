@@ -25,7 +25,7 @@ public class Flight
 	public Flight()
 	{
 
-		// write code to initialize instance variables to default values
+		// This part of code initializes instance variables to default values
 		this.flightNum = "AC100";
 		this.airline = "Air Canada";
 		this.dest = "New York";
@@ -124,12 +124,12 @@ public class Flight
 		this.passengers = passengers;
 	}
 	
-	// Check to see if there is room on this flight - compare current passenger count
+	// Now, we check to see if there is room on this flight - we compare the current passenger count
 	// with aircraft max capacity of economy seats
 
 	
 	/*
-	 * reserve a seat on this flight - essentially increases the passenger count by 1 only if there is room for more
+	 * We now reserve a seat on this flight - this essentially increases the passenger count by 1 only if there is room for more
 	 * economy passengers on the aircraft used for this flight (see instance variables above)
 	 */
 	public void reserveSeat(Passenger aPassenger) throws FlightHasNoFirstClassSeatsException,SeatOccupiedException,SeatDoesNotExistException,PassengerAlreadyOnFlightException{
